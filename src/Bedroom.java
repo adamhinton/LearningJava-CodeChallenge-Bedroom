@@ -104,8 +104,8 @@ class Bed{
 }
 
 class Ceiling{
-    int height;
-    int paintedColor;
+    private int height;
+    private int paintedColor;
 
     public Ceiling(int height, int paintedColor) {
         this.height = height;
@@ -123,6 +123,10 @@ class Ceiling{
 
 class Wall{
     private String direction;
+
+    public String getDirection() {
+        return direction;
+    }
 
     public Wall(String direction) {
         this.direction = direction;
